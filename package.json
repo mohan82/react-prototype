@@ -1,0 +1,28 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "playground",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/mohan82/playground.git"
+  },
+  "keywords": [
+    "playground"
+  ],
+  "main": "index.js",
+  "author": "mohan ambalavanan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/mohan82/playground/issues"
+  },
+  "homepage": "https://gitlab.com/mohan82/playground#README",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-react": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
