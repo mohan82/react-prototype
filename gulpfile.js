@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('connect', function () {
     connect.server({
         root: 'app',
-        port: 9000,
+        port: 5000,
         livereload: true
     });
 });
@@ -27,3 +27,5 @@ gulp.task('default', ['connect','watch']);
 gulp.task('watch', function () {
     gulp.watch(['app/**/*.html','app/**/*.js','app/**/*.css'], ['html','js','css']);
 });
+
+gulp.task("start",["connect"]);
