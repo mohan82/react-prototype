@@ -1,1 +1,1 @@
-web: gulp run-app
+web: node node_modules/gulp/bin/gulp run-app
