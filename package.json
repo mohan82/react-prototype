@@ -1,29 +1,35 @@
 {
-  "name": "playground",
+  "name": "react-prototype",
   "version": "1.0.0",
-  "description": "playground",
+  "description": "react-prototype",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/mohan82/playground.git"
+    "url": "git+ssh://github.com/mohan82/react-prototype.git"
   },
   "keywords": [
-    "playground"
+    "react-prototype"
   ],
   "main": "index.js",
   "author": "mohan ambalavanan",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/mohan82/playground/issues"
+    "url": "https://github.com/mohan82/react-prototype/issues"
   },
   "scripts": {
     "start": "node  index.js"
   },
-  "homepage": "https://gitlab.com/mohan82/playground#README",
+  "homepage": "https://github.com/mohan82/react-prototype#README",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-react": "^3.1.0",
+    "gulp-rev": "^7.0.0",
     "gulp-sass": "^2.3.1",
-    "gulp-react": "^3.1.0"
+    "gulp-uglify": "^1.5.3",
+    "gulp-usemin": "^0.3.23"
   },
   "dependencies": {
     "express": "^4.13.4"
