@@ -16,7 +16,7 @@
     "url": "https://github.com/mohan82/react-prototype/issues"
   },
   "scripts": {
-    "start": "node  index.js"
+    "start": "gulp build && node index.js"
   },
   "homepage": "https://github.com/mohan82/react-prototype#README",
   "devDependencies": {

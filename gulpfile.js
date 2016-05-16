@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 var CONFIG = {
     JS: ['app/js/*.js', 'app/js/**/*.js'],
     DIST: 'dist/',
-    SRC:'app/',
+    SRC: 'app/',
     TEMP: "app/temp/"
 };
 
@@ -24,17 +24,18 @@ gulp.task('connect', function () {
     });
 });
 
-gulp.task('jsx', function () {
-    gulp.src(CONFIG.JS)
+function _jsx() {
+    return gulp.src(CONFIG.JS)
         .pipe(react())
-        .on('error', function(err) {
-          console.error(err);
-        }).pipe(gulp.dest(CONFIG.TEMP))
-        .pipe(connect.reload());
+        .pipe(gulp.dest(CONFIG.TEMP))
+}
+
+gulp.task('jsx', function () {
+    return _jsx().pipe(connect.reload());
 });
 
 
-gulp.task('usemin',['jsx'], function () {
+gulp.task('build',['jsx'], function () {
     return gulp.src('app/index.html')
         .pipe(usemin({
             css: [rev()],
@@ -51,7 +52,6 @@ gulp.task('watch', function () {
         ['jsx']);
 });
 
-gulp.task('build', ['usemin'])
 
 gulp.task('default', ['jsx', 'connect', 'watch']);
 
