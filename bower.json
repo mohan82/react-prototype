@@ -1,0 +1,24 @@
+{
+  "name": "react-prototype",
+  "description": "react prototype",
+  "main": "index.js",
+  "authors": [
+    "mohan ambalavanan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "prototype"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.0.2"
+  }
+}
