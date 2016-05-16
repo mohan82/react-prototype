@@ -59,7 +59,7 @@ gulp.task('default', ['jsx', 'connect', 'watch']);
 gulp.task("run-app", ["build"],function () {
     connect.server({
         root: CONFIG.DIST,
-        port: 5000,
+        port: process.env.PORT || 5000,
         livereload: false
     });
 
